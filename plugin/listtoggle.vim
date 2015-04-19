@@ -57,7 +57,7 @@ endfunction
 
 
 function! s:QListToggle()
-  if exists("s:quickfix_buffer_number") && buflisted("s:quickfix_buffer_number")
+  if exists("s:quickfix_buffer_number")
     silent! cclose
   else
     execute "silent! botright copen " . g:lt_height
